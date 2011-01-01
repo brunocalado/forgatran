@@ -1,0 +1,4 @@
+MODULE continuosGene
+    IMPLICIT NONE 
+CONTAINS
+END MODULE continuos
