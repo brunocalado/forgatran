@@ -12,8 +12,8 @@ PROGRAM main
     USE score
     USE statistics
     USE encode
-!
- !------------------------------------------------------------------------------
+
+!------------------------------------------------------------------------------
     IMPLICIT NONE !Não permite variaves não declaradas
     INTEGER (KIND=integerSize), PARAMETER    :: boundsSize = 2
     REAL (KIND=realSize), PARAMETER            :: upperBounds(boundsSize) = 5.0d0

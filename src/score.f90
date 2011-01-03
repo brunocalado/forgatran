@@ -4,24 +4,25 @@ MODULE score
 !OPTIONAL----------------------------------------------------------------------
     IMPLICIT NONE !Não permite variaves não declaradas
 
-    !Your code
+    !Your variables and constants
     INTEGER, PRIVATE :: i
 
 CONTAINS
-!    !Binary Sample
+	!Binary Sample
     REAL (KIND=realSize) FUNCTION scoreGene(gene)
         IMPLICIT NONE !Não permite variaves não declaradas
         INTEGER (KIND=integerSize), INTENT(IN) :: gene
         scoreGene = 0.0D0
 
         !Put your fitness code here
+
         DO i=1, totalGeneSize, 2
             IF( pop(i, gene) == .TRUE. .AND. (pop(i+1, gene) == .FALSE.) ) scoreGene = scoreGene + 1.0D0
         END DO
 
     END FUNCTION
 
-!    !Integer Sample
+    !Integer Sample
 !    REAL (KIND=realSize) FUNCTION scoreGene(gene)
 !        IMPLICIT NONE !Não permite variaves não declaradas
 !        INTEGER (KIND=integerSize), INTENT(IN) :: gene

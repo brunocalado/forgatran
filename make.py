@@ -14,11 +14,9 @@ import os, sys
 # Variables and Constants
 #----------------------------------------------------------
 #dir receives the actual path 
-dir = os.getcwd()
+#dir = os.getcwd()
 
-makepyDir = ''
-
-compilerOptionsFileName = 'compilerOptions.cfg'
+compilerOptionsFileName = 'intelCompilerOptions.cfg'
 sourceFilesFileName = 'sourceFiles.cfg'
 
 compiler = 'ifort'
@@ -33,7 +31,7 @@ exeFilename = 'FORGATRAN'
 
 out = ''
 outSrc= ''
-debug = 0
+debug = 1
 
 if __name__ == '__main__':
     if len(sys.argv) == 2: 
@@ -105,21 +103,27 @@ if debug: print( 50*'-' + '\n' )
 #----------------------------------------------------------
 # Main
 #----------------------------------------------------------
-outtmp = out
-for j in range(0,3):
-    out = outtmp
-    for i in selectedSourceFiles:
-        out += ' ' + i
+#outtmp = out
+#for j in range(0,3):
+#out = outtmp
 
-    if debug: os.system('echo ' + out)
+for i in selectedSourceFiles:
+    out += ' ' + i
 
-    os.system(out)
+os.system( out )
+os.system( out )
+os.system( out )
+os.system( out )
+os.system( out )
+os.system( out )
 
 
+if debug: print(out)
 if debug: print( 'Success' )
 
-os.system('rm -f *.mod ')
 
+os.system( 'rm -f *.mod' )
+os.system( 'mv ' + exeFilename + ' tmp' )
 
 
 
