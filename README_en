@@ -1,0 +1,25 @@
+
+# --------------------------------------------------------------------------------
+# Software Requeriments
+# --------------------------------------------------------------------------------
+
+You'll need these to modify and run ForGAtran:
+
+- Eclipse Classic 3.6.1 IDE or higher
+- Photran
+- Intel® Fortran Compiler (working to make gnu fortran work)
+
+
+Download and install: Eclipse Classic 3.6.1 IDE
+http://www.eclipse.org/downloads/
+
+Download and install: Photran - An Integrated Development Environment and Refactoring Tool for Fortran
+http://www.eclipse.org/photran/
+
+Note: You can download and install Photran though Eclipse
+
+Download and install: Noncommercial Intel® Fortran Compiler Professional Edition for Linux
+http://software.intel.com/en-us/articles/non-commercial-software-download/
+
+
+
